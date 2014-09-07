@@ -1,3 +1,15 @@
 body {
 	background: -webkit-linear-gradient(top,#82085f,#201a60);
 }
+
+.mood-images img {
+	height: 250px;
+	width: 250px;
+	margin: 20px 0 20px 0;
+	text-align: center;
+}
+
+textarea {
+	margin-top: 20px;
+	color: #000;
+}
