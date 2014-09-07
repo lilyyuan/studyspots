@@ -3,6 +3,7 @@ var weather = "";
 var weatherIcon = "";
 var weatherTemp = "";
 var weatherName = "";
+var mood = "";
 
 function findWeather(){
 	$("#zipcode-button").unbind().click(function(){ 
@@ -22,11 +23,23 @@ function findWeather(){
   			}
   		});
 	})
-  combineMoodForecast();
+  getMood();
 }
 
+function getMood() {
+  $("#focus").unbind().click(function(){ 
+      mood = $(this).attr( "id");
+  });
+
+  $("#procrastination").unbind().click(function(){ 
+      mood = $(this).attr( "id");
+  });
+
+  combineMoodForecast();
+}  
+
 function combineMoodForecast() {
-  
+  if (()&&())
 }
 
 $( document ).ready(function() {
