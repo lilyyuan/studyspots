@@ -11,10 +11,15 @@ body {
 
 textarea {
 	margin-top: 20px;
+	margin-bottom: 10px;ß
 	color: #000;
 }
 
 .cover-heading.degrees-text {
 	font-size: 100px;
 	text-align: center;
+}
+
+.cover-heading.degrees-icon {
+	font-size: 100px;
 }
