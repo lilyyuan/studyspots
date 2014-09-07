@@ -1,4 +1,4 @@
-var zipCode = "";
+/*var zipCode = "";
 var weather = "";
 var weatherIcon = "";
 var weatherTemp = "";
@@ -44,7 +44,7 @@ function getMood() {
 }  
 
 function combineMoodForecast() {
-  if ((mood == "procrastination")&&(weather == "sunny")) {
+    if ((mood == "procrastination")&&(weather == "sunny")) {
       location = "frozenyogurt";
   }
 }
@@ -52,3 +52,4 @@ function combineMoodForecast() {
 $( document ).ready(function() {
   findWeather();
 });
+*/
