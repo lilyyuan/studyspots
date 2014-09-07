@@ -4,6 +4,8 @@ var weatherIcon = "";
 var weatherTemp = "";
 var weatherName = "";
 var mood = "";
+var lat = "";
+var lon = "";
 
 
 function findWeather(){
@@ -19,6 +21,8 @@ function findWeather(){
             //weatherIcon = parsed_json['current_observation']['icon_url'];
             weatherName = parsed_json['current_observation']['weather'];
             weatherTemp = parsed_json['current_observation']['temp_f'];
+            lat = parsed_json['location']['lat'];
+            lon = parsed_json['location']['lon'];
             $(".degrees-text").html(weatherTemp);
             $(".weather-forecast").html(weatherName); //"<img src=" + weatherIcon + ">"
   			}
@@ -40,6 +44,7 @@ function getMood() {
 }  
 
 function combineMoodForecast() {
+  //function isn't working. keeps on being undone?
     if ((mood == "procrastination")&&(weather == "sunny")) {
     }
 }
