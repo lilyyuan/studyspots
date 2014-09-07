@@ -1,5 +1,21 @@
-body {
+.site-wrapper#landing-page {
 	background: -webkit-linear-gradient(top,#82085f,#201a60);
+}
+
+.site-wrapper#search-page {
+	background: -webkit-linear-gradient(top,#201a60,#1697C9);
+}
+
+.site-wrapper#weather-page {
+	background: -webkit-linear-gradient(top,#1697C9,#1BE350);
+}
+
+.site-wrapper#mood-page {
+	background: -webkit-linear-gradient(top,#1BE350,#E3E01B);
+}
+
+.site-wrapper#last-page {
+	background: -webkit-linear-gradient(top,#E3E01B,#E33D1B);
 }
 
 .mood-images img {
