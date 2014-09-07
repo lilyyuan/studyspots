@@ -50,7 +50,7 @@ function combineMoodForecast() {
     if ((mood == "procrastination")&&(weather == "sunny")) {
     }
 
-    //findPlaces();
+    findPlaces();
 }
 
 function findPlaces(){
@@ -67,7 +67,7 @@ function findPlaces(){
 function createMap() {
   var myLatlng = new google.maps.LatLng(lat,lon);
   var mapOptions = {
-    zoom: 4,
+    zoom: 18,
     mapTypeId:google.maps.MapTypeId.ROADMAP,
     center: myLatlng
   }
