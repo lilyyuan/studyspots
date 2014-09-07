@@ -11,7 +11,7 @@ var lon = "";
 function findWeather(){
 	$("#zipcode-button").unbind().click(function(){ 
 		zipCode = $("#zipcode-data").val(); 
-		console.log(zipCode);
+		//console.log(zipCode);
 		$.ajax({
   			url : "http://api.wunderground.com/api/d17f7b9a0dddc27a/conditions/geolookup/q/"+zipCode+".json",
  			  dataType : "jsonp",
@@ -26,7 +26,7 @@ function findWeather(){
             $(".degrees-text").html(weatherTemp);
             $(".weather-forecast").html(weatherName); //"<img src=" + weatherIcon + ">"
   			}
-  		});
+  	});
 	})
   getMood();
 }
@@ -40,13 +40,27 @@ function getMood() {
       mood = $(this).attr( "id");
   });
 
-  combineMoodForecast();
+  //combineMoodForecast();
+  findPlaces();
 }  
 
 function combineMoodForecast() {
   //function isn't working. keeps on being undone?
     if ((mood == "procrastination")&&(weather == "sunny")) {
     }
+
+    //findPlaces();
+}
+
+function findPlaces(){
+    $.ajax({
+        dataType: "json",
+        url : "https://maps.googleapis.com/maps/api/place/textsearch/json?location="+lat+","+lon+"&radius=5000&query=restaurant&key=AIzaSyDoFuP9Cs4ct_YaGyKuXuu-SpInA0vOqqQ",
+        success : function(info) {
+            console.log(info);
+            
+        }
+    });
 }
 
 $( document ).ready(function() {
