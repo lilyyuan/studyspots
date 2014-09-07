@@ -5,7 +5,7 @@ var weatherTemp = "";
 var weatherName = "";
 
 function findWeather(){
-	$("#zipcode-button").click(function(){ 
+	$("#zipcode-button").unbind().click(function(){ 
 		zipCode = $("#zipcode-data").val(); 
 		console.log(zipCode);
 		$.ajax({
@@ -18,13 +18,15 @@ function findWeather(){
             weatherName = parsed_json['current_observation']['weather'];
             weatherTemp = parsed_json['current_observation']['temp_f'];
             $(".degrees-text").html(weatherTemp);
-            $(".lead").html(weatherName); //"<img src=" + weatherIcon + ">"
-  				//var location = parsed_json['location']['city'];
-  				//var temp_f = parsed_json['current_observation']['temp_f'];
-  				//alert("Current temperature in " + location + " is: " + temp_f);
+            $(".weather-forecast").html(weatherName); //"<img src=" + weatherIcon + ">"
   			}
   		});
 	})
+  combineMoodForecast();
+}
+
+function combineMoodForecast() {
+  
 }
 
 $( document ).ready(function() {
