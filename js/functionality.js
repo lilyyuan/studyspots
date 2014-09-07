@@ -4,6 +4,7 @@ var weatherIcon = "";
 var weatherTemp = "";
 var weatherName = "";
 var mood = "";
+var location = "";
 
 function findWeather(){
 	$("#zipcode-button").unbind().click(function(){ 
@@ -18,8 +19,6 @@ function findWeather(){
             //weatherIcon = parsed_json['current_observation']['icon_url'];
             weatherName = parsed_json['current_observation']['weather'];
             weatherTemp = parsed_json['current_observation']['temp_f'];
-            lat = parsed_json['geolookup']['lat'];
-            lon = parsed_json['geolookup']['lon'];
             $(".degrees-text").html(weatherTemp);
             $(".weather-forecast").html(weatherName); //"<img src=" + weatherIcon + ">"
   			}
@@ -41,13 +40,9 @@ function getMood() {
 }  
 
 function combineMoodForecast() {
-<<<<<<< HEAD
     if ((mood == "procrastination")&&(weather == "sunny")) {
       location = "frozenyogurt";
   }
-=======
-  if (()&&())
->>>>>>> parent of 3d5e8b8... LOGIC
 }
 
 $( document ).ready(function() {
