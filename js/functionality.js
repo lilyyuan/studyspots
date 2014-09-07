@@ -4,9 +4,6 @@ var weatherIcon = "";
 var weatherTemp = "";
 var weatherName = "";
 var mood = "";
-var location = "";
-var lat = "";
-var lon  = "";
 
 function findWeather(){
 	$("#zipcode-button").unbind().click(function(){ 
@@ -44,9 +41,13 @@ function getMood() {
 }  
 
 function combineMoodForecast() {
+<<<<<<< HEAD
     if ((mood == "procrastination")&&(weather == "sunny")) {
       location = "frozenyogurt";
   }
+=======
+  if (()&&())
+>>>>>>> parent of 3d5e8b8... LOGIC
 }
 
 $( document ).ready(function() {
