@@ -42,7 +42,8 @@ function getMood() {
 function combineMoodForecast() {
     if ((mood == "procrastination")&&(weather == "sunny")) {
       location = "frozenyogurt";
-  }
+    }
+    else {location= "ownroom"}
 }
 
 $( document ).ready(function() {
