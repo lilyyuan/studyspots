@@ -1,4 +1,4 @@
-/*var zipCode = "";
+var zipCode = "";
 var weather = "";
 var weatherIcon = "";
 var weatherTemp = "";
@@ -52,4 +52,4 @@ function combineMoodForecast() {
 $( document ).ready(function() {
   findWeather();
 });
-*/
+
