@@ -5,6 +5,8 @@ var weatherTemp = "";
 var weatherName = "";
 var mood = "";
 var location = "";
+var lat = "";
+var lon  = "";
 
 function findWeather(){
 	$("#zipcode-button").unbind().click(function(){ 
@@ -16,9 +18,11 @@ function findWeather(){
  			  success : function(parsed_json) {
             console.log(parsed_json);
             weather = parsed_json['current_observation']['icon'];
-            weatherIcon = parsed_json['current_observation']['icon_url'];
+            //weatherIcon = parsed_json['current_observation']['icon_url'];
             weatherName = parsed_json['current_observation']['weather'];
             weatherTemp = parsed_json['current_observation']['temp_f'];
+            lat = parsed_json['geolookup']['lat'];
+            lon = parsed_json['geolookup']['lon'];
             $(".degrees-text").html(weatherTemp);
             $(".weather-forecast").html(weatherName); //"<img src=" + weatherIcon + ">"
   			}
