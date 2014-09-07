@@ -13,3 +13,8 @@ textarea {
 	margin-top: 20px;
 	color: #000;
 }
+
+.cover-heading.degrees-text {
+	font-size: 100px;
+	text-align: center;
+}

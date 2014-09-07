@@ -83,21 +83,12 @@
 
         <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">StudySpots</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-
           <div class="inner cover">
             <h1 class="cover-heading">Where are you now?</h1>
-            <textarea id="zipcode-data" rows="4" cols="50">Type in your zip code...</textarea>
-            <a href="#weather-page" id="zipcode-button" class="btn btn-lg btn-default">Let's go</a>
+            <div id="zipcode-textarea">
+              <textarea id="zipcode-data" rows="1" cols="50" placeholder="Type in your zip code..."></textarea>
+            </div>
+            <a href="#weather-page" id="zipcode-button" class="btn btn-sm btn-default">Let's go</a>
           </div>
 
 
@@ -115,19 +106,8 @@
 
         <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">StudySpots</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-
           <div class="inner cover">
-            <h1 class="cover-heading">This is the weather</h1>
+            <div class="cover-heading degrees-text">73°</div>
             <p class="lead"><a href="#mood-page">Weather stuff</a></p>
           </div>
 
@@ -145,18 +125,7 @@
 
         <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">StudySpots</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-
-            <div class="inner cover mood-images">
+          <div class="inner cover mood-images">
             <h1 class="cover-heading">How are you feeling?</h1>
             
             <div class="row">
@@ -170,11 +139,35 @@
             	</div>	
             </div>
 
+            <div class="inner cover">
+              <p class="lead"><a href="#last-page">last page</a></p>
+            </div>
+          </div>
+
         </div>
 
       </div>
 
     </div>
+
+    <!-- LAST PAGE -->
+
+    <div class="site-wrapper" id="last-page">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="inner cover">
+            <h1 class="cover-heading">You should go here</h1>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
